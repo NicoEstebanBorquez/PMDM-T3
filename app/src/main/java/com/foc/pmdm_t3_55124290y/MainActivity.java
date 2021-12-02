@@ -53,13 +53,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //MediaPlayer
         mp = new MediaPlayer();
 
+        //Ruta del fichero que se va a reproducir
         String ruta = getFilesDir().getAbsolutePath() + File.separator + "Grabacion.3gp";
-        // mp.reset();
         try {
             mp.setDataSource(ruta);
             mp.prepare();
         } catch (IOException e) {
             e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "No se encuentra el fichero 'Grabacion.3gp'",
+                    Toast.LENGTH_SHORT).show();
         }
 
         //Accion que se realiza al finalizar la reproducción
