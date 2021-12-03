@@ -35,16 +35,20 @@
 
             <Button
                 android:id="@+id/btnGrabacion"
-                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
                 android:layout_weight="1"
-                android:hapticFeedbackEnabled="false"
+                android:width="200dp"
+                android:height="75dp"
+                android:maxWidth="200dp"
                 android:onClick="onClick"
                 android:stateListAnimator="@android:anim/fade_in"
-                android:text="@string/grabar" />
+                android:text="@string/grabar"
+                android:textSize="16dp"
+                app:icon="@android:drawable/ic_btn_speak_now" />
 
         </LinearLayout>
 
@@ -67,14 +71,18 @@
 
             <Button
                 android:id="@+id/btnReproduccion"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="95dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
                 android:layout_weight="1"
+                android:width="220dp"
+                android:height="75dp"
+                android:maxWidth="220dp"
                 android:onClick="onClick"
-                android:text="@string/reproducir" />
+                android:text="@string/reproducir"
+                android:textSize="16dp"
+                app:icon="@android:drawable/ic_media_play" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,14 +94,18 @@
                 android:id="@+id/btnRetroceder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="3dp"
                 android:layout_weight="1"
-                android:width="68dp"
-                android:minWidth="70dp"
+                android:width="150dp"
+                android:height="55dp"
+                android:minWidth="100dp"
+                android:minHeight="15dp"
                 android:onClick="onClick"
-                android:text="@string/retroceder" />
+                android:text="@string/retroceder"
+                android:textSize="16dp"
+                app:icon="@android:drawable/ic_media_rew" />
 
             <Button
                 android:id="@+id/btnAvanzar"
@@ -101,12 +113,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="50dp"
                 android:layout_weight="1"
-                android:width="68dp"
-                android:minWidth="70dp"
+                android:width="150dp"
+                android:height="55dp"
+                android:minWidth="100dp"
+                android:minHeight="15dp"
                 android:onClick="onClick"
-                android:text="@string/avanzar" />
+                android:text="@string/avanzar"
+                android:textSize="16dp"
+                app:icon="@android:drawable/ic_media_ff"
+                app:iconGravity="end" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

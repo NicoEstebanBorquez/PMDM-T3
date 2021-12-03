@@ -4,6 +4,6 @@
     <string name="reproduccion">Reproducción:</string>
     <string name="grabar">Grabar</string>
     <string name="reproducir">Reproducir</string>
-    <string name="retroceder">Retroceder 5s</string>
-    <string name="avanzar">Avanzar 5s</string>
+    <string name="retroceder">- 5seg.</string>
+    <string name="avanzar">+ 5seg.</string>
 </resources>

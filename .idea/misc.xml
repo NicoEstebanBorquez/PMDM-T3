@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Nico/AndroidStudioProjects/PMDM_T3_55124290Y/app/src/main/res/drawable/stat_notify_call_mute.xml" value="0.1537037037037037" />
         <entry key="..\:/Users/Nico/AndroidStudioProjects/PMDM_T3_55124290Y/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Nico/AppData/Local/Android/Sdk/platforms/android-30/data/res/drawable/btn_borderless_rect.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Nico/AppData/Local/Android/Sdk/platforms/android-30/data/res/drawable/ic_qs_night_display_on.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/Nico/AppData/Local/Android/Sdk/platforms/android-30/data/res/drawable/stat_sys_speakerphone.xml" value="0.17777777777777778" />
       </map>
     </option>
   </component>

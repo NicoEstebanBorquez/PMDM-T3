@@ -162,6 +162,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.botonesHabilitados(true, false, false, false);
         btnGrabacion.setText("Parar grabación");
 
+        //Cambia icono botón
+        btnGrabacion.setCompoundDrawablesWithIntrinsicBounds(null,null, null, null);
+        btnGrabacion.setCompoundDrawablesWithIntrinsicBounds(android.R.drawable.stat_notify_call_mute,0,0,0);
+
         //Activa animación
         Animation anim = new AlphaAnimation(0.5f, 1.0f);
         anim.setDuration(900);
@@ -187,6 +191,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.botonesHabilitados(true, true, false, false);
         btnGrabacion.setText("Grabar");
 
+
+
         //Desactiva animación
         btnGrabacion.clearAnimation();
         btnGrabacion.clearFocus();
@@ -205,6 +211,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.botonesHabilitados(false, true, true, true);
         btnReproduccion.setText("Pausar reproducción");
 
+        //Cambia icono botón
+        btnReproduccion.setCompoundDrawablesWithIntrinsicBounds(null,null, null, null);
+        btnReproduccion.setCompoundDrawablesWithIntrinsicBounds(android.R.drawable.ic_media_pause,0,0,0);
+
         estaReproduciendo = true;
     }
 
@@ -220,12 +230,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         estaReproduciendo = false;
     }
 
-    public void retroceder(){
-        mp.seekTo(mp.getCurrentPosition()-5000);
+    public void retroceder() {
+        mp.seekTo(mp.getCurrentPosition() - 5000);
     }
 
-    public void avanzar(){
-        mp.seekTo(mp.getCurrentPosition()+5000);
+    public void avanzar() {
+        mp.seekTo(mp.getCurrentPosition() + 5000);
     }
 
     @Override
